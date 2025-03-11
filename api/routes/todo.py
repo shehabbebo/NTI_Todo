@@ -41,7 +41,8 @@ def get_all_tasks():
         "id": task.id,
         "title": task.title,
         "description": task.description,
-        "image_path": task.image_path
+        "image_path": task.image_path,
+        "created_at": task.created_at
     }, tasks))
 
     response = {
@@ -148,7 +149,8 @@ def get_user_tasks():
             "id": task.id,
             "title": task.title,
             "description": task.description,
-            "image_path": task.image_path
+            "image_path": task.image_path,
+            "created_at": task.created_at
         }
         for task in tasks
     ]
